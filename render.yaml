@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: missing-person-form-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python perfect_bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: "8037566521:AAFaHL1pVIdzpOEKb7NwADFKzH2d4wPVkJU"
+      - key: DOCUMENT_PATH
+        value: "ALL MISSING FORMS.docx" 
